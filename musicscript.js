@@ -6,7 +6,7 @@ const audio = document.querySelector('#audio');
 const progress = document.querySelector('.progress');
 const progressContainer = document.querySelector('.progress-container');
 const title = document.querySelector('#title');
-const cover = document.querySelector('#cover');
+const albumcover = document.querySelector('#cover');
 
 
 //song title
@@ -22,7 +22,7 @@ loadSong(songs[songIndex])
 function loadSong(song) {
     title.innerText = song 
     audio.src = `music/${song}.mp3`
-    cover.src = `images/${song}.jpeg`
+    albumcover.src = `images/${song}.jpeg`
 }
 
 //play / pause song function
